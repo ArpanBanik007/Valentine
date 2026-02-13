@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-size: 1000px;
+    background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
+    background-position: center;
+    font-family: 'Zeyada', cursive;
+}
+
+.paper {
+    position: fixed;
+    /* ✅ absolute না */
+    top: 50%;
+    left: 50%;
+
+    padding: 20px 60px;
+    background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
+    background-size: 500px;
+    background-position: center;
+
+    box-shadow: 1px 15px 20px rgba(0, 0, 0, 0.4);
+    cursor: grab;
+    user-select: none;
+}
+
+.paper.image {
+    padding: 10px;
+}
+
+.paper.image p {
+    font-size: 30px;
+}
+
+.paper.heart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.paper.heart::after {
+    content: "";
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png');
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+
+img {
+    max-height: 300px;
+    width: 100%;
+    pointer-events: none;
+}
+
+p {
+    font-size: 50px;
+    color: rgb(0, 0, 100);
+    opacity: 0.75;
+    margin: 0;
+}
