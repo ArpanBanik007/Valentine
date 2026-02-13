@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
-import img1 from "../src/img/1.jpeg";
-import img2 from "../src/img/2.jpeg";
-import img3 from "../src/img/3.jpg";
+import img1v from "../src/img/1vv.jpeg";
+import img2v from "../src/img/2vvv.jpeg";
+import img3v from "../src/img/3vv.jpeg";
+
 import "./index.css";
 
 let highestZ = 1;
@@ -90,17 +91,17 @@ export default function DragPapers() {
       <div ref={(el) => (papersRef.current[2] = el)} className="paper image">
         <p>and I fallen in</p>
         <p>Love with You 😍</p>
-        <img src={img1} alt="" />
+        <img src={img1v} alt="" />
       </div>
 
       <div ref={(el) => (papersRef.current[3] = el)} className="paper image">
-        <img src={img2} alt="" />
+        <img src={img2v} alt="" />
       </div>
 
       <div ref={(el) => (papersRef.current[4] = el)} className="paper image">
         <p>How can be</p>
         <p>someone so cute ❤️</p>
-        <img src={img3} alt="" />
+        <img src={img3v} alt="" />
       </div>
 
       <div ref={(el) => (papersRef.current[5] = el)} className="paper">
